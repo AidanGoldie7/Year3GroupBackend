@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace Year3GroupBackend.Models
 {
@@ -27,18 +28,25 @@ namespace Year3GroupBackend.Models
 
             public userDetails()
     {
+
+        Regex r = new Regex("^[a-zA-Z0-9]*$");
+
+
         if (string.IsNullOrEmpty(this.firstName))
         {
             Console.WriteLine("Please enter first name");
-
         }
 
 
         if(string.IsNullOrEmpty(this.lastName))
         {
-
             Console.WriteLine("Please enter last name");
+        }
 
+
+        if (!r.IsMatch(this.firstName))
+        {
+            Console.WriteLine("Name must only contain letters");
         }
     }
         
