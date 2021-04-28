@@ -29,7 +29,7 @@ namespace Year3GroupBackend.Models
             public userDetails()
     {
 
-        Regex r = new Regex("^[a-zA-Z0-9]*$");
+        Regex r = new Regex("^[a-zA-Z]+$");
 
 
         if (string.IsNullOrEmpty(this.firstName))
