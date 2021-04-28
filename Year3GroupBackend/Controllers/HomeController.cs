@@ -9,6 +9,7 @@ using Year3GroupBackend.Models;
 
 namespace Year3GroupBackend.Controllers
 {
+[ApiController]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -17,6 +18,8 @@ namespace Year3GroupBackend.Controllers
         {
             _logger = logger;
         }
+
+
 
         public IActionResult Index()
         {
