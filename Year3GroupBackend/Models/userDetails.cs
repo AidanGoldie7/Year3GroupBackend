@@ -15,7 +15,7 @@ namespace Year3GroupBackend.Models
 
         public DateTime DOB { get; set; }
        
-        public string instatutionName { get; set; }
+        public string institutionName { get; set; }
 
         public string course { get; set; }
 
