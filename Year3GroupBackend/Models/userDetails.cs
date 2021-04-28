@@ -5,7 +5,7 @@ namespace Year3GroupBackend.Models
 {
     public class userDetails
     {
- public int studentID { get; set; }
+         public int studentID { get; set; }
         
         public string firstName { get; set; }
 
@@ -24,7 +24,43 @@ namespace Year3GroupBackend.Models
 
 
 
+
+            public userDetails()
+    {
+        if (string.IsNullOrEmpty(this.firstName))
+        {
+            Console.WriteLine("Please enter first name");
+
+        }
+
+
+        if(string.IsNullOrEmpty(this.lastName))
+        {
+
+            Console.WriteLine("Please enter last name");
+
+        }
     }
+        
+
+
+        
+
+        
+    }
+
+
+
+
+
+    
+
+
+
+
+
+
+
 }
 
     
