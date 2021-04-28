@@ -48,6 +48,12 @@ namespace Year3GroupBackend.Models
         {
             Console.WriteLine("Name must only contain letters");
         }
+
+
+        if (!r.IsMatch(this.lastName))
+        {
+            Console.WriteLine("Last name must only contain letters");
+        }
     }
         
 
